@@ -51,7 +51,8 @@ class Market
    end
   end
   def total_inventory
-    total.flatten.uniq
+    total.map do |keys, values|
+      values
   end
-
+end
 end
